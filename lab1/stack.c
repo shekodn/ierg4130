@@ -1,7 +1,7 @@
 /* stack.c */
 /* This program has a buffer overflow vulnerability. */
 /* Our task is to exploit this vulnerability */
-#include <stdlib.h>
+// #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -17,6 +17,7 @@ int main(int argc, char **argv) {
     FILE *badfile;
     badfile = fopen("badfile", "r");
     fread(str, sizeof(char), 517, badfile);
+    printf("%i\n", strlen(str));
     bof(str);
     printf("Returned Properly\n");
     return 1;
