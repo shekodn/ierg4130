@@ -1,9 +1,0 @@
-apt-get install wget (use "yum install wget" for Fedora)
-cd dir_name  (assume you want to put the libcap library in dir_name)
-wget http://www.kernel.org/pub/linux/libs/security/linux-privs/
-              libcap2/libcap-2.16.tar.gz
-
-tar xvf libcap-2.16.tar.gz
-cd libcap-2.16
-make   (this will compile libcap)
-make install
