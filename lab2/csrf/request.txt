@@ -1,0 +1,5 @@
+http://www.csrflabphpbb.com/posting.php?subject=hello&
+addbbcode18=%23444444&addbbcode20=0&helpbox=Quote+text%3A+%5
+Bquote%5Dtext%5B%2Fquote%5D++%28alt%2Bq%29&message=This+is+
+my+message&topictype=0&poll_title=&add_poll_option_text=&
+poll_length=&mode=newtopic&f=1&post=Submit

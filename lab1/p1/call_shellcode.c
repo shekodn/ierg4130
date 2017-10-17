@@ -15,7 +15,7 @@ const char code[] =
   "\x99"
   "\xb0\x0b"
   "\xcd\x80";
-  
+
 int main(int argc, char **argv)
 {
    char buf[sizeof(code)];

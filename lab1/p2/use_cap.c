@@ -13,7 +13,7 @@ if (open ("/etc/shadow", O_RDONLY) < 0)
 /* Question (a): is the above open sucessful? why? */
 if (cap_disable(CAP_DAC_READ_SEARCH) < 0) return -1;
 if (open ("/etc/shadow", O_RDONLY) < 0)
-    printf("(b) Open failed\n");
+    printf("(b) Open failed\n"); ///////////////////////////////////////////////
 /* Question (b): is the above open sucessful? why? */
 if (cap_enable(CAP_DAC_READ_SEARCH) < 0) return -1;
 if (open ("/etc/shadow", O_RDONLY) < 0)
@@ -21,10 +21,10 @@ if (open ("/etc/shadow", O_RDONLY) < 0)
 /* Question (c): is the above open sucessful? why?*/
 if (cap_drop(CAP_DAC_READ_SEARCH) < 0) return -1;
 if (open ("/etc/shadow", O_RDONLY) < 0)
-    printf("(d) Open failed\n");
+    printf("(d) Open failed\n"); ///////////////////////////////////////////////
 /* Question (d): is the above open sucessful? why?*/
 if (cap_enable(CAP_DAC_READ_SEARCH) == 0) return -1;
 if (open ("/etc/shadow", O_RDONLY) < 0)
-    printf("(e) Open failed\n");
+    printf("(e) Open failed\n"); ///////////////////////////////////////////////
 /* Question (e): is the above open sucessful? why?*/
 }
